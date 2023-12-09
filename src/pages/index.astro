@@ -1,9 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import image1 from "../assets/IMG_8813.jpg";
+import image2 from "../assets/IMG_8777.jpeg";
+import image3 from "../assets/IMG_8809.jpeg";
+import image4 from "../assets/IMG_8825.jpeg";
+import { Image } from "astro:assets";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Nola-Lion King-2023">
   <main>
     <svg
       class="astro-a"
@@ -74,10 +79,12 @@ import Card from "../components/Card.astro";
         allowfullscreen></iframe>
     </div>
 
-    <p class="mt-12">
-      I'll add a few more videos here - sorry for the abrupt ending on this
-      one!!!
-    </p>
+    <p class="mt-4">sorry for the abrupt ending on this one!!!</p>
+    <Image src={image1} alt="big group" class="mt-12" />
+    <Image src={image2} alt="program" class="mt-12" />
+    <Image src={image3} alt="nola pic" class="mt-12" />
+    <Image src={image4} alt="nola pic" class="mt-12" />
+
     <!-- <ul role="list" class="link-card-grid">
       <Card
         href="https://docs.astro.build/"
